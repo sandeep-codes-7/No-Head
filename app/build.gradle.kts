@@ -28,6 +28,21 @@ android {
         buildConfigField("String", "BLE_CHAR_HANDSHAKE_UUID", "\"00004E4A-0000-1000-8000-00805F9B34FB\"")
     }
 
+    signingConfigs {
+        create("release") {
+            val envPath = System.getenv("KEYSTORE_PATH")
+            val resolvedFile = if (!envPath.isNullOrBlank()) file(envPath) else rootProject.file("nohead-release-key.jks")
+            if (resolvedFile.exists()) {
+                storeFile = resolvedFile
+                storePassword = System.getenv("KEYSTORE_PASSWORD") ?: ""
+                keyAlias = System.getenv("KEY_ALIAS") ?: "nohead_release"
+                keyPassword = System.getenv("KEY_PASSWORD") ?: ""
+                enableV1Signing = true
+                enableV2Signing = true
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -36,6 +51,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            val releaseSignConfig = signingConfigs.getByName("release")
+            if (releaseSignConfig.storeFile?.exists() == true) {
+                signingConfig = releaseSignConfig
+            }
         }
         debug {
             isMinifyEnabled = false

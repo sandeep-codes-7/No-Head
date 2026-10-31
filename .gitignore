@@ -44,3 +44,8 @@ hs_err_pid*
 
 ### Visual Studio Code ###
 .vscode/
+
+
+*.jks
+*.keystore
+keystore.properties

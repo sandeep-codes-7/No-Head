@@ -241,9 +241,9 @@ class ConnectionAndCommServicesTest {
         assertFalse(isSafe("trojan_update.apk", "application/octet-stream", 1024L, isBleOnly = false))
         // Shell script must be blocked
         assertFalse(isSafe("exploit.sh", "text/plain", 256L, isBleOnly = false))
-        // File exceeding BLE 48 KB limit must be rejected on BLE-only link, but accepted on Wi-Fi Aware (up to 512 KB)
-        assertFalse(isSafe("photo_hd.jpg", "image/jpeg", 120_000L, isBleOnly = true))
-        assertTrue(isSafe("photo_hd.jpg", "image/jpeg", 120_000L, isBleOnly = false))
+        // File exceeding BLE 256 KB limit must be rejected on BLE-only link, but accepted on Wi-Fi Aware (up to 10 MB)
+        assertFalse(isSafe("photo_hd.jpg", "image/jpeg", 512_000L, isBleOnly = true))
+        assertTrue(isSafe("photo_hd.jpg", "image/jpeg", 512_000L, isBleOnly = false))
     }
 }
 
