@@ -1,0 +1,46 @@
+### Gradle ###
+.gradle/
+**/build/
+!**/src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Cache of project
+.gradletasknamecache
+
+# Log files
+*.log
+
+### Gradle Wrapper ###
+# By default, do NOT ignore the wrapper jar and properties so others can build the project.
+# If you explicitly want to exclude binaries, uncomment the line below:
+# !gradle-wrapper.jar
+
+### Java / Kotlin ###
+*.class
+*.jar
+*.war
+*.ear
+*.ctxt
+.kotlin/
+
+# Virtual machine crash logs
+hs_err_pid*
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+/out/
+
+### Eclipse ###
+.metadata/
+.classpath
+.project
+.settings/
+/bin/
+
+### Visual Studio Code ###
+.vscode/
