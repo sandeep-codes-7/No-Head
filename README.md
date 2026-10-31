@@ -125,3 +125,10 @@ Sign the resulting `app/build/outputs/apk/release/app-release-unsigned.apk` with
 - [Security Threat Model, Privacy Policy & Data Inventory](docs/SECURITY_THREAT_MODEL_AND_PRIVACY.md)
 - [Real-Device Testing Checklist, Compatibility Matrix & Feature Matrix](docs/TESTING_AND_COMPATIBILITY.md)
 
+---
+
+## 5. License
+
+This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
+
+

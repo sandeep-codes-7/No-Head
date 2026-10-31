@@ -1,0 +1,12 @@
+Initial release of No head:
+- Bluetooth Low Energy (BLE) Multi-Hop Mesh network
+- Wi-Fi Aware (NAN) high-speed local transport
+- End-to-end encrypted direct messaging (X25519 + ChaCha20-Poly1305)
+- Public and Argon2id password-protected channels
+- Store-and-Forward courier mailboxes
+- Voice notes and Push-to-Talk (PTT)
+- Coarse geohash channels
+- Optional Nostr relays with Tor SOCKS5 proxy support
+- SQLCipher-encrypted local storage with hardware Keystore backing
+- Emergency Panic Wipe
+

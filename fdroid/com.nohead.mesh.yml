@@ -1,0 +1,44 @@
+Categories:
+  - Connectivity
+  - Security
+  - Internet
+License: Apache-2.0
+AuthorName: Sandeep
+AuthorWebSite: https://github.com/sandeep-codes-7/No-Head
+SourceCode: https://github.com/sandeep-codes-7/No-Head
+IssueTracker: https://github.com/sandeep-codes-7/No-Head/issues
+Changelog: https://github.com/sandeep-codes-7/No-Head/releases
+
+AutoName: No head
+Summary: Anonymous off-grid decentralized P2P mesh messenger over BLE & Wi-Fi
+Description: |-
+  No head is a privacy-first, anonymous-by-default decentralized peer-to-peer
+  messaging application for Android (API 26+) that enables communication without
+  internet, user accounts, phone numbers, or central servers.
+
+  Key Features:
+  * Multi-hop Bluetooth Low Energy (BLE) Mesh relay with TTL packet routing
+  * Optional Wi-Fi Aware (NAN) high-speed local direct transport
+  * Optional Nostr TLS WebSocket relay client with Tor SOCKS5 proxy support
+  * End-to-end encrypted direct messaging (X25519, ChaCha20-Poly1305, HKDF)
+  * Argon2id password-protected channels and geohash regional rooms
+  * Store-and-Forward encrypted courier mailboxes
+  * Hardware-backed SQLCipher encrypted local database
+  * Zero-knowledge emergency Panic Wipe
+
+RepoType: git
+Repo: https://github.com/sandeep-codes-7/No-Head.git
+
+Builds:
+  - versionName: 1.0.0-mesh
+    versionCode: 1
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0-mesh
+CurrentVersionCode: 1
+

@@ -1,0 +1,34 @@
+No head is a privacy-first, anonymous-by-default decentralized peer-to-peer messaging application for Android that enables communication without internet access, user accounts, phone numbers, or central servers.
+
+Key Features:
+
+• Bluetooth Low Energy (BLE) Multi-Hop Mesh:
+Communicate completely off-grid. Packets route hop-by-hop between nearby devices with Time-To-Live (TTL) controls and persistent deduplication.
+
+• Wi-Fi Aware (NAN) Transport:
+Hardware-assisted local high-throughput mesh transport when supported by your device, automatically falling back to BLE mesh.
+
+• End-to-End Encrypted Direct Messaging:
+Private 1:1 conversations protected with Noise XX-inspired key agreement (X25519, HKDF-SHA256, ChaCha20-Poly1305) and Ed25519 signing keys.
+
+• Password-Protected & Public Channels:
+Create or join public discussion channels or encrypted private groups with Argon2id-derived key schedules.
+
+• Store-and-Forward Courier Mailboxes:
+Encrypted courier nodes hold and forward messages across the mesh network without ever being able to read message contents.
+
+• Geohash Spatial Rooms:
+Coarse regional communication channels selectable via geohash grids without exposing fine-grained GPS location.
+
+• Live Voice Notes & Push-to-Talk:
+Send lightweight voice notes and stream low-latency audio directly over the local mesh.
+
+• Optional Nostr Relay Bridge & Tor SOCKS5 Proxy:
+Opt-in long-range connectivity over TLS WebSockets and Tor without sacrificing local autonomy.
+
+• Emergency Panic Wipe:
+Instantly stops all radios, shreds local encryption keys, purges database records, and resets identity.
+
+• 100% Free & Open Source:
+No trackers, no analytics, no proprietary dependencies, and no telemetry.
+

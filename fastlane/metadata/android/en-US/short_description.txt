@@ -1,0 +1,2 @@
+Anonymous off-grid decentralized P2P mesh messenger over BLE & Wi-Fi
+
